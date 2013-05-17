@@ -63,18 +63,18 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<riot>, [">= 0"])
       s.add_runtime_dependency(%q<builder>, [">= 0"])
       s.add_runtime_dependency(%q<rack>, [">= 0"])
-      s.add_runtime_dependency(%q<rdiscount>, [">= 0"])
+      s.add_runtime_dependency(%q<github-markdown>, [">= 0"])
     else
       s.add_dependency(%q<riot>, [">= 0"])
       s.add_dependency(%q<builder>, [">= 0"])
       s.add_dependency(%q<rack>, [">= 0"])
-      s.add_dependency(%q<rdiscount>, [">= 0"])
+      s.add_dependency(%q<github-markdown>, [">= 0"])
     end
   else
     s.add_dependency(%q<riot>, [">= 0"])
     s.add_dependency(%q<builder>, [">= 0"])
     s.add_dependency(%q<rack>, [">= 0"])
-    s.add_dependency(%q<rdiscount>, [">= 0"])
+    s.add_dependency(%q<github-markdown>, [">= 0"])
   end
 end
 

@@ -16,7 +16,7 @@ begin
     if RUBY_PLATFORM =~ /win32/
       gem.add_dependency "maruku"
     else
-      gem.add_dependency "rdiscount"
+      gem.add_dependency "github-markdown"
     end
   end
   Jeweler::GemcutterTasks.new
