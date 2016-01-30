@@ -80,12 +80,12 @@ module Toto
     end
 
     def archives filter = ""
-      entries = ! self.articles.empty??
+      entries = !self.articles.empty? ? (
         self.articles.select do |a|
           filter !~ /^\d{4}/ || File.basename(a) =~ /^#{filter}/
         end.reverse.map do |article|
           Article.new article, @config
-        end : []
+        end) : []
 
       return :archives => Archives.new(entries, @config)
     end
